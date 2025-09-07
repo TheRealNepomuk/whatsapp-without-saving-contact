@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/whatsapp-without-saving-contact/', // 👈 add this line
+  base: '/whatsapp-without-saving-contact/', // 👈 this line is crucial
   server: {
-    host: true, // listen on all addresses, including LAN
+    host: true,
     port: 5173,
   },
 })
